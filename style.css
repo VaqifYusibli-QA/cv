@@ -1,0 +1,140 @@
+body {
+    background: radial-gradient(circle, #4F9D9D, #192E5B); /* Радиальный градиент для фона */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый цвет контейнера */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-text {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2E3D48;
+}
+
+span {
+    color: #FF6347; /* Оранжевый цвет */
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.skills,
+.experience,
+.projects,
+.contact {
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: #2E3D48;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #FF6347;
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.project-card {
+    margin: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #FF6347;
+}
+
+.project-info {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.project-info p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #2E3D48;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #2E3D48;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
